@@ -8,6 +8,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
 }
 .main-section {
     background-color: $background-color;
@@ -26,6 +27,10 @@
     margin-right: auto;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    @media screen and (min-width: 480px) {
+        width: 480px;
+    }
 }
 .main-section__button {
     color: $title-color;
@@ -49,6 +54,7 @@
         background: #2196F3;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     }
+
 }
 
 .section__hide {
@@ -63,6 +69,17 @@
 }
 .advantages {
     display: flex;
+    
+    @media screen and (min-width: 480px) {
+        display: block;
+      }
+    @media screen and (min-width: 768px) {
+        display: flex;
+        /*flex-wrap: wrap;*/
+      }
+      @media screen and (min-width: 1200px) {
+        display: flex;
+      }
 }
 .advantages__container {
     display: flex;
@@ -90,6 +107,10 @@
     &:last-child {
         margin-right: 0;
     }
+
+    @media screen and (max-width: 767px) {
+        text-align: center;
+      }
 }
 .advantages__item {
     margin-right: 30px;
@@ -109,9 +130,16 @@
     }
 }
 
-.work-section {
+.section--no--padding__top {
     padding-top: 0;
+    @media screen and (max-width: 480px) {
+        display: none;
+      }
+      @media screen and (min-width: 768px) {
+        display: none;
+      }
 }
+
 .section__title {
     color: $color-text;
     font-weight: 700;
@@ -161,9 +189,15 @@
     margin-bottom: 50px;
 }
 .team {
-    list-style-type: none;
-    display: flex;
+    @media screen and (min-width: 1200px) {
+        list-style-type: none;
+        display: flex;
+    }
     
+    @media screen and (max-width: 480px) {
+        display: block;
+        align-items: center;
+      }
 }
 .team__item {
     margin-right: 30px;

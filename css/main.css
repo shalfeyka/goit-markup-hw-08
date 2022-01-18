@@ -167,6 +167,12 @@
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 480px) {
+  .main-section__title {
+    width: 480px;
+  }
+}
+
 .main-section__button {
   color: #FFFFFF;
   font-weight: 700;
@@ -208,6 +214,29 @@
   display: flex;
 }
 
+@media screen and (min-width: 480px) {
+  .advantages {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantages {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /*flex-wrap: wrap;*/
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .advantages__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -244,6 +273,12 @@
   margin-right: 0;
 }
 
+@media screen and (max-width: 767px) {
+  .advantages__title {
+    text-align: center;
+  }
+}
+
 .advantages__item {
   margin-right: 30px;
 }
@@ -263,8 +298,20 @@
   margin-right: 0;
 }
 
-.work-section {
+.section--no--padding__top {
   padding-top: 0;
+}
+
+@media screen and (max-width: 480px) {
+  .section--no--padding__top {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section--no--padding__top {
+    display: none;
+  }
 }
 
 .section__title {
@@ -329,11 +376,22 @@
   margin-bottom: 50px;
 }
 
-.team {
-  list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (min-width: 1200px) {
+  .team {
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .team {
+    display: block;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .team__item {
@@ -576,12 +634,68 @@
   margin-left: auto;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-container {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .footer-adress {
   margin-right: 70px;
 }
 
+@media screen and (max-width: 767px) {
+  .footer-adress {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-adress {
+    margin-right: 165px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-adress {
+    margin-right: 70px;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+}
+
 .adress__list {
   margin-top: 20px;
+}
+
+@media screen and (min-width: 480px) {
+  .adress__list {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .adress__item {
@@ -616,6 +730,10 @@
   color: #2196f3;
 }
 
+/*.network {
+    @media screen and (max-width: 767px) 
+    margin-bottom: 60px;
+  } */
 .network__title {
   color: #FFFFFF;
   font-size: 14px;
@@ -765,6 +883,16 @@
   display: flex;
 }
 
+@media screen and (min-width: 480px) {
+  .clients {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .clients__item {
   width: 170px;
   height: 92px;
@@ -773,6 +901,12 @@
 
 .clients__item:last-child {
   margin-right: 0;
+}
+
+@media screen and (min-width: 480px) {
+  .clients__item {
+    margin-bottom: 30px;
+  }
 }
 
 .clients__link {
@@ -1080,8 +1214,32 @@ body {
   padding-left: 15px;
 }
 
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
 .section {
   padding: 94px 0;
+}
+
+@media screen and (max-width: 1199px) {
+  .section {
+    padding: 60px 0;
+  }
 }
 
 h1,
