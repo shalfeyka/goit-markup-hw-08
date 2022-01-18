@@ -1,0 +1,119 @@
+.header {
+    background-color: $title-color;
+    border-bottom: 1px solid #ECECEC;
+}
+.header__container {
+    display: flex;
+    align-items: center;
+}
+
+ .navigate-list {
+    color: $color-text;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    position: relative;
+    display: flex;
+ }
+ 
+ .navigate__item {
+     margin-right: 50px;
+ }
+ .current::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: $hover-collor-text;
+    border-radius: 2px;
+    bottom: -1px;
+}
+
+.navigate__list {
+    color: $color-text;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    position: relative;
+
+    &:last-child {
+        margin-right: 0;
+}
+}
+ .navigate__link {
+     padding-top: 32px;
+     padding-bottom: 32px;
+     text-decoration: none;
+     color: $color-text;
+     transition: color 250ms $timing-function;
+
+     &:hover,
+     &:focus {
+        color: $hover-collor-text;
+     }
+     
+     &.current {
+        color: $hover-collor-text;
+        position: relative;
+    }
+
+ }
+ 
+.contacts-list__icon {
+    margin-right: 10px;
+    fill: currentColor;
+
+
+    &:hover {
+        color: $hover-collor-text;
+    }
+}
+
+.contacts-list {
+    list-style-type: none;
+    display: flex;
+    margin-left: auto;
+    border-radius: 4px;
+    fill: currentColor;
+}
+.contacts-list__link {
+    display: flex;
+    align-items: center;
+    color: $color-text-header;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    padding-top: 32px;
+    padding-bottom: 32px; 
+    transition: color 250ms $timing-function;
+
+    &:hover,
+    &:focus {
+    color: $hover-collor-text;
+}
+}
+
+ .contacts-list__item {
+    margin-right: 50px;
+
+    &:last-child {
+        margin-right: 0;
+        }
+}                  
