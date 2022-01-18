@@ -208,6 +208,9 @@
     &:last-child {
         margin-right: 0;
     }
+    @media screen and (min-width= 480px) {
+        width: 100%;
+    }
 }
 
 .team-container {
