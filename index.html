@@ -14,6 +14,23 @@
    <header class="header">
     <div class="container header__container">
     <a class="logo" href="./index.html">Web<span class="logo__dark">Studio</span></a>
+    <button 
+        class="menu-button js-open-menu"
+        type="button"
+        aria-expanded="false">
+            <svg class="menu-icon" width="24" height="16" aria-label="Меню">
+                <use href="./images/sprite.svg#icon-open-menu"></use>
+            </svg>
+    </button>
+    <div class="mobile-menu js-menu-container">
+        <button
+          class="mobile-menu__close js-close-menu"
+          type="button"
+          aria-expanded="false">
+          <svg class="menu-icon" width="19" height="19" aria-label="Меню">
+            <use class="menu-close" href="./images/sprite.svg#icon-close_menu"></use>
+          </svg>
+        </button>
     <nav class="navigate">
        <ul class="navigate__list">
             <li class="navigate__item"><a href="index.html"        class="navigate__link navigate__link--current" >Студия</a></li>
@@ -95,10 +112,19 @@
        <li  class="work-list__item"> <img  src="./images/img.jpg" alt="картинка1" width="370">
             <p class="work-list__text">десктопные приложения</p>
        </li>
-       <li  class="work-list__item"> <img src="./images/img (1).jpg" alt="картинка2" width="370">
+       <li  class="work-list__item">
+            <img
+            class="image" 
+            src="./images/img (1).jpg" 
+            alt="картинка2" 
+            width="370">
         <p class="work-list__text">мобильные приложения</p>
     </li>
-       <li  class="work-list__item"> <img src="./images/img (2).jpg" alt="картинка3" width="370">
+       <li  class="work-list__item"> <img
+         class="image"
+         src="./images/img (2).jpg"
+         alt="картинка3"
+         width="370">
         <p class="work-list__text">дизайнерские решения</p>
     </li> 
         </ul>
@@ -109,8 +135,40 @@
             <div class="container">
         <h2 class="section__title">Наша команда</h2>
         <ul class="team">
-        <li class="team__item">  
-        <img src="./images/Игорь.jpg" alt="фотокоманды1" width="270">
+        <li class="team__item">
+        <picture>
+            <source
+                  srcset="
+                    ./images/pc/igorИгорь1х.jpg   1x,
+                    ./images/pc/igorИгорь2х.jpg   2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/Игорь1х.jpg   1x,
+                    ./images/tablet/Игорь2х.jpg 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="
+                  ./images/mobile/Игорь1х.jpg   1x,
+                  ./images/mobile/Игорь2х.jpg   2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpg"
+                />
+
+                <img
+                  class="team__image"
+                  src="./images/Игорь.jpg"
+                  width="450"
+                  alt="фотокоманды1"
+                />
+        </picture>
         <div class="team-container">
         <h3 class="team__title">Игорь Демьяненко</h3>
         <p class="team__text">Product Designer</p>
