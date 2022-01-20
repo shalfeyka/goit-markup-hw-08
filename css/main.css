@@ -3,6 +3,10 @@
   border-bottom: 1px solid #ECECEC;
 }
 
+.header {
+  display: none;
+}
+
 .header__container {
   display: -webkit-box;
   display: -ms-flexbox;

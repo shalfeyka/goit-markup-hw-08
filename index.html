@@ -14,23 +14,34 @@
    <header class="header">
     <div class="container header__container">
     <a class="logo" href="./index.html">Web<span class="logo__dark">Studio</span></a>
+
+
+
+
     <button 
-        class="menu-button js-open-menu"
+        class="menu-button is-open"
         type="button"
         aria-expanded="false">
-            <svg class="menu-icon" width="24" height="16" aria-label="Меню">
-                <use href="./images/sprite.svg#icon-open-menu"></use>
+            <svg class="menu-icon"
+             width="40" 
+             height="40" 
+             aria-label="Переключатель мобильного меню">
+                <use class="menu-open"  href="./images/sprite.svg#icon-open-menu"></use>
+                <use class="menu-close" href="./images/sprite.svg#icon-close_menu"></use>
             </svg>
     </button>
-    <div class="mobile-menu js-menu-container">
+   <!-- <div class="mobile-menu js-menu-container">
         <button
           class="mobile-menu__close js-close-menu"
           type="button"
           aria-expanded="false">
           <svg class="menu-icon" width="19" height="19" aria-label="Меню">
             <use class="menu-close" href="./images/sprite.svg#icon-close_menu"></use>
-          </svg>
+          </svg> 
         </button>
+    </div> -->
+
+    <div>
     <nav class="navigate">
        <ul class="navigate__list">
             <li class="navigate__item"><a href="index.html"        class="navigate__link navigate__link--current" >Студия</a></li>
@@ -38,7 +49,6 @@
             <li class="navigate__item"><a href=""                  class="navigate__link">Контакты </a></li>
        </ul>
     </nav>
-    <!--Contacts-->
     <ul class="contacts-list">
         <li class="contacts-list__item"><a class="contacts-list__link" href="mailto:info@devstudio.com">
             <svg class="contacts-list__icon" width="16" height="12"> 
@@ -52,21 +62,27 @@
         </svg>
        +38 096 111 11 11</a></li>
     </ul>  
+</div>
+
     <ul class="menu">
         <li class="menu__item">
           <a href="" class="menu__link">Instagram</a>
         </li>
-        <li class="menu__item"><span class="menu__line"></span></li>
+        <li class="menu__item"><span class="menu__sign"></span></li>
         <li class="menu__item">
           <a href="" class="menu__link">Twitter</a>
         </li>
-        <li class="menu__item"><span class="menu__line"></span></li>
+        <li class="menu__item"><span class="menu__sign"></span></li>
         <li class="menu__item">
           <a href="" class="menu__link">Facebook</a>
         </li>
-        <li class="menu__item"><span class="menu__line"></span></li>
+        <li class="menu__item"><span class=""menu__sign"></span></li>
         <li class="menu__item">
           <a href="" class="menu__link">Linkedin</a> 
+          </li>
+          </ul>
+
+
     </div>
    </header> 
 <!--main information-->
@@ -665,6 +681,7 @@
         </form>
     </div>
 </div>
+<script src="./js/mobilemenu.js"></script>
 <script src="./js/modal.js"></script>
 </body>
 </html>

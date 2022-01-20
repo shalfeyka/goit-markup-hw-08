@@ -2,6 +2,9 @@
     background-color: $title-color;
     border-bottom: 1px solid #ECECEC;
 }
+.header {
+    display: none;
+}
 
 .header__container {
     display: flex;
