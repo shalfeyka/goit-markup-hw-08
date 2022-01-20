@@ -10,17 +10,40 @@
 }
 .filter {
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+    /*justify-content: center;
+    margin-bottom: 50px;*/
+
+    @media screen and (max-width: 767px) {
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+      }
+      @media screen and (min-width: 768px) {
+        margin-bottom: 50px;
+        justify-content: center;
+    }
 }
 .filter__item {
-    align-items: center;
+   /* align-items: center;
     margin-right: 8px;
-
     &:last-child {
         margin-right: 0;
-    }
+    }*/
 
+    @media screen and (max-width: 767px) {
+        margin-right: 8px;
+        margin-bottom: 15px;
+        &:nth-child(3n) {
+          margin-right: 0;
+        }
+        &:nth-last-child(-n + 2) {
+          margin-bottom: 0px;
+        }
+      }
+      @media screen and (min-width: 768px) {
+        &:not(:last-child) {
+          margin-right: 8px;
+        }
+      }
 }
 .filter__button { 
     color: $color-text;
