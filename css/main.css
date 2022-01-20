@@ -279,10 +279,6 @@
   }
 }
 
-.advantages__item {
-  margin-right: 30px;
-}
-
 .advantages__item:last-child {
   margin-right: 0;
 }

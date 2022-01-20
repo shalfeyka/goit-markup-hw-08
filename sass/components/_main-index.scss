@@ -135,13 +135,13 @@
 }
 .advantages {
     @media screen and (min-width: 768px) {
-        display: flex;
-        flex-wrap: wrap;
+        display: block;
       }
       @media screen and (min-width: 1200px) {
         display: flex;
       }
 }
+
 .advantages__container {
     display: flex;
     height: 120px;
@@ -150,6 +150,10 @@
     align-items: center;
     justify-content: center;
     background-color: $background-team;
+
+    @media screen and (max-width: 767px) {
+        margin-right: 0;
+      }
 }
 .advantages__icon {
     width: 70px;
@@ -164,41 +168,11 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
-    &:last-child {
-        margin-right: 0;
-    }
-
     @media screen and (max-width: 767px) {
         text-align: center;
       }
 }
-.advantages__item {
-    display: inline-block;
-    @media screen and (max-width: 767px) {
-    margin-bottom: 30px;
-    &:nth-last-child(-n + 1) {
-      margin-bottom: 0;
-      margin-right: 0;
-    }
-  }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    max-width: 352px;
-    margin-right: 30px;
-    margin-bottom: 30px;
-    &:nth-child(2n) {
-      margin-right: 0;
-    }
-    &:nth-last-child(-n + 2) {
-      margin-bottom: 0;
-    }
-  }
-  @media screen and (min-width: 1200px) {
-    max-width: 270px;
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
-  }
-}
+
 .advantages__text {
     color: $color-text-header;
     font-size: 14px;
@@ -213,7 +187,7 @@
 .section--no--padding__top {
     padding-top: 0;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 480px) {
         display: none;
       }
 }
@@ -226,6 +200,14 @@
     text-align: center;
     letter-spacing: 0.03em;
     margin-bottom: 30px;
+
+    @media screen and (max-width: 1199px) {
+        font-size: 28px;
+        line-height: 1.17;
+      }
+      @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+      }
 }
 .work-list {
     list-style-type: none;
@@ -278,22 +260,26 @@
     font-weight: 700;
     margin-bottom: 50px;
 }
+.section--other__background {
+    background-color: $background-team;
+}
 .team {
-    @media screen and (min-width: 1200px) {
-        list-style-type: none;
+    background-color: $background-team;
+    @media screen and (min-width: 768px) {
         display: flex;
-    }
-    
-    @media screen and (max-width: 480px) {
-        display: block;
-        align-items: center;
+        flex-wrap: wrap;
+        background-color: $background-team
+      }
+      @media screen and (min-width: 1200px) {
+        display: flex;
+        background-color: $background-team
       }
 }
 .team__item {
     margin-right: 30px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    background-color: $title-color;
+    background-color: $background-team;
 
     &:last-child {
         margin-right: 0;

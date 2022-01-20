@@ -10,6 +10,16 @@
     transition-property: transform;
     transition-duration: 250ms;
     padding: 40px;
+
+    @media screen and (max-width: 767px) {
+        width: 100%;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: 450px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 528px;
+    }
 }
 .modal__button-close {
     position: absolute;
@@ -115,6 +125,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media screen and (max-width: 1199px) {
+        font-size: 12px;
+        line-height: 1.1;
+    }
 }
 .terms__checkbox {
     -webkit-appearance:none;
