@@ -1,13 +1,65 @@
 .overlay {
-    max-width: 1600px;
+    max-width: auto;
     height: 600px;
     margin-left: auto;
     margin-right: auto;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
-    url('../images/фон\ \(1\).jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+    url('../images/mobile/overlaymobile1x.jpg');
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/mobile/overlaymobile2x.jpg');
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/tablet/overlaytablet1x.jpg');
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/tablet/overlaytablet2x.jpg')
+  }
+  @media screen and (min-width: 1200px) {
+    height: 600px;
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/pc/overlaypc1x.jpg');
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/pc/overlaypc2x.jpg');
+  }
 
 }
 .main-section {
@@ -15,28 +67,37 @@
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
+
+    @media screen and (max-width: 1199px) {
+        padding: 118px 0;
+      }
+      @media screen and (min-width: 1200px) {
+        padding: 200px 0;
+      }
   }
   .main-section__title {
     color: $title-color;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.16;
     text-align: center;
-    width: 696px;
     margin-left: auto;
     margin-right: auto;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
-    @media screen and (min-width: 480px) {
-        width: 480px;
-    }
+    @media screen and (max-width: 1199px) {
+        font-size: 26px;
+        line-height: 1.61;
+      }
+      @media screen and (min-width: 1200px) {
+        font-size: 44px;
+        line-height: 1.36;
+      }
 }
 .main-section__button {
     color: $title-color;
     font-weight: 700;
     font-size: 16px;
-    line-height: 1.88;
+    line-height: 1.85;
     text-align: center;
     background: $hover-collor-text;
     letter-spacing: 0.06em;
@@ -48,6 +109,11 @@
     padding-left: 32px;
     border: transparent;
     border-radius: 4px;
+    min-width: 200px;
+    display: inline-block;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 10px 32px;
 
     &:hover, 
     &:focus {
@@ -68,14 +134,9 @@
     clip: rect(0 0 0 0);
 }
 .advantages {
-    display: flex;
-    
-    @media screen and (min-width: 480px) {
-        display: block;
-      }
     @media screen and (min-width: 768px) {
         display: flex;
-        /*flex-wrap: wrap;*/
+        flex-wrap: wrap;
       }
       @media screen and (min-width: 1200px) {
         display: flex;
@@ -101,7 +162,6 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
-    margin-bottom: 10px;
     text-transform: uppercase;
 
     &:last-child {
@@ -113,11 +173,31 @@
       }
 }
 .advantages__item {
-    margin-right: 30px;
-
-    &:last-child {
-        margin-right: 0;
+    display: inline-block;
+    @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+    &:nth-last-child(-n + 1) {
+      margin-bottom: 0;
+      margin-right: 0;
     }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    max-width: 352px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 270px;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
 }
 .advantages__text {
     color: $color-text-header;
@@ -132,10 +212,8 @@
 
 .section--no--padding__top {
     padding-top: 0;
-    @media screen and (max-width: 480px) {
-        display: none;
-      }
-      @media screen and (min-width: 768px) {
+
+    @media screen and (max-width: 767px) {
         display: none;
       }
 }
@@ -153,6 +231,10 @@
     list-style-type: none;
     display: flex;
     position: relative;
+
+    @media screen and (max-width: 767px) {
+        display: none;
+      }
 }
 .work-list__item {
     margin-right: 30px;
@@ -170,11 +252,19 @@
     line-height: 1.14;
     background-color: rgba(47, 48, 58, 0.8);
     display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     justify-content: center;
     display: flex;
     position: absolute;
     bottom: 0;
     height: 70px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+     justify-content: center;
 }
 .section-team {
     background-color: $background-team;
