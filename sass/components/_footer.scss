@@ -48,6 +48,9 @@
 .adress__list {
     margin-top: 20px;
     list-style-type: none;
+    @media screen and (max-width: 767px) {
+        margin-left: 55px;
+    }
 }
 
 .adress__item {
@@ -96,6 +99,10 @@
 }
 .network__list {
     display: flex;
+
+    @media screen and (max-width: 767px) {
+        margin-left: 123px;
+    }
 }
 .network__item {
     margin-right: 10px;

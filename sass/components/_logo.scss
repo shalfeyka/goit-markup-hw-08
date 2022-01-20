@@ -3,11 +3,18 @@
     font-family: Raleway;
     font-weight: 700;
     font-size: 26px;
-    line-height: 1.14;
+    line-height: 1.19;
     text-decoration: none;
     letter-spacing: 0.03em;
-    margin-right: 93px;
+    
+    @media screen and (min-width: 1200px) {
+        margin-right: 93px;
+      }
+    @media screen and (max-width: 767px) {
+        margin-left: 55px;
+    }
 }
+
 .logo__dark {
     color: $color-text;
     font-family: Raleway;
@@ -16,14 +23,7 @@
     line-height: 1.14;
     text-decoration: none;
 }
-.logo {
-    color: $hover-collor-text;
-    font-family: Raleway;
-    letter-spacing: 0.03em;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1,19;
-}
+
 .logo__half {
     color: $title-color;
     font-family: Raleway;
