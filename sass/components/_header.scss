@@ -2,9 +2,7 @@
     background-color: $title-color;
     border-bottom: 1px solid #ECECEC;
 }
-.header {
-    display: none;
-}
+
 .header__container {
     display: flex;
     align-items: center;
@@ -28,17 +26,6 @@
  .navigate__item {
      margin-right: 50px;
  }
- .current::after {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 4px;
-    background-color: $hover-collor-text;
-    border-radius: 2px;
-    bottom: -1px;
-}
-
 .navigate__list {
     color: $color-text;
     font-family: Roboto;
@@ -55,6 +42,17 @@
     &:last-child {
         margin-right: 0;
 }
+    @media screen and (max-width: 767px) {
+      display: block;
+    }
+}
+.navitage__item {
+    @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: 50px;
+  }
 }
  .navigate__link {
      padding-top: 32px;
@@ -68,20 +66,55 @@
         color: $hover-collor-text;
      }
      
-     &.current {
-        color: $hover-collor-text;
-        position: relative;
-    }
 
  }
- 
+ .navigate__link--current {
+    color: $hover-collor-text;
+    position: relative;
+
+ }
+ .navigate__link--current::after {
+
+   @media screen and (min-width: 768px) {
+    display: block;
+    position: absolute;
+    width: 100%;
+    content: '';
+    height: 4px;
+    background-color: $hover-collor-text;
+    border-radius: 2px;
+    bottom: -1px;
+   } 
+}
+ .contacts-list {
+     margin-left: auto;
+     @media screen and (max-width: 767px) {
+        margin-top: auto;
+        margin-left: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+
+        @media screen and (min-width: 1200px) {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+        }
+     }
+ }
 .contacts-list__icon {
     margin-right: 10px;
     fill: currentColor;
 
-
     &:hover {
         color: $hover-collor-text;
+    }
+    @media screen and (max-width: 767px) {
+        display: none;
     }
 }
 
@@ -111,12 +144,27 @@
     &:focus {
     color: $hover-collor-text;
 }
+    @media screen and (min-width: 768px) {
+    padding: 10px 0;
+    font-size: 14px;
+    line-height: 1.14;
+}
+    @media screen and (max-width) {
+        color: $hover-collor-text;
+    }
+    @media screen and (min-width: 1200px) {
+        padding: 32px 0;
+    }
 }
 
  .contacts-list__item {
-    margin-right: 50px;
-
+    @media screen and (min-width: 1200px) {
+        margin-right: 50px;
     &:last-child {
-        margin-right: 0;
-        }
+            margin-right: 0;
+            }
+    }
+    @media screen and (max-width: 767px) {
+        margin-bottom: 30px;
+    }
 }                  
