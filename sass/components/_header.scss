@@ -2,10 +2,6 @@
     background-color: $title-color;
     border-bottom: 1px solid #ECECEC;
 }
-.header {
-    display: none;
-}
-
 .header__container {
     display: flex;
     align-items: center;
@@ -41,6 +37,7 @@
     text-decoration: none;
     display: flex;
     position: relative;
+    display: none;
 
     &:last-child {
         margin-right: 0;
@@ -91,6 +88,7 @@
 }
  .contacts-list {
      margin-left: auto;
+     
      @media screen and (max-width: 767px) {
         margin-top: auto;
         margin-left: 0;
@@ -101,6 +99,7 @@
         -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
         flex-direction: column-reverse;
+        
 
         @media screen and (min-width: 1200px) {
             display: -webkit-box;
@@ -127,6 +126,7 @@
     margin-left: auto;
     border-radius: 4px;
     fill: currentColor;
+    display: none;
 }
 .contacts-list__link {
     display: flex;

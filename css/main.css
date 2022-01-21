@@ -3,10 +3,6 @@
   border-bottom: 1px solid #ECECEC;
 }
 
-.header {
-  display: none;
-}
-
 .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -51,6 +47,7 @@
   display: -ms-flexbox;
   display: flex;
   position: relative;
+  display: none;
 }
 
 .navigate__list:last-child {
@@ -155,6 +152,7 @@
   margin-left: auto;
   border-radius: 4px;
   fill: currentColor;
+  display: none;
 }
 
 .contacts-list__link {
@@ -1502,6 +1500,7 @@
   line-height: 1.19;
   text-decoration: none;
   letter-spacing: 0.03em;
+  display: none;
 }
 
 @media screen and (min-width: 1200px) {
