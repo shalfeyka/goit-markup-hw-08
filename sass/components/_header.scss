@@ -19,7 +19,6 @@
     text-decoration: none;
     display: flex;
     position: relative;
-    display: flex;
  }
  
  .navigate__item {
@@ -37,7 +36,6 @@
     text-decoration: none;
     display: flex;
     position: relative;
-    display: none;
 
     &:last-child {
         margin-right: 0;
@@ -126,7 +124,6 @@
     margin-left: auto;
     border-radius: 4px;
     fill: currentColor;
-    display: none;
 }
 .contacts-list__link {
     display: flex;
