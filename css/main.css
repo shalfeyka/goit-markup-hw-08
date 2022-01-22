@@ -558,7 +558,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .team__item {
     -ms-flex-preferred-size: calc((100% - 120px) / 2);
         flex-basis: calc((100% - 120px) / 2);
@@ -568,10 +568,6 @@
 @media screen and (min-width: 1200px) {
   .team__item {
     width: 270px;
-    margin-right: 30px;
-  }
-  .team__item:last-child {
-    margin-right: 0;
   }
 }
 
