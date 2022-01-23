@@ -5,9 +5,7 @@
 
 .footer-container {
    
-
     @media screen and (max-width: 480px) {
-        width: 480px;
         display: block;
     }
     @media screen and (min-width: 768px) {
@@ -99,13 +97,14 @@
 }
 .network__list {
     display: flex;
-
+    
     @media screen and (max-width: 767px) {
         margin-left: 123px;
     }
 
 }
 .network__item {
+
     margin-right: 10px;
 
     &:last-child {
