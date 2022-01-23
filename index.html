@@ -15,19 +15,15 @@
     <div class="container header__container">
     <a class="logo" href="./index.html">Web<span class="logo__dark">Studio</span></a>
     
-    <button type="button" class="menu_open-btn">
-        <svg class="menu_open-icon" width="40" height="40">
-                <use class="menu-open"  href="./images/sprite.svg#icon-open-menu"></use>
+    <button type="button" class="menu_open">
+        <svg class="menu_open-icon"
+         width="40" 
+         height="40"
+         aria-label="Переключатель мобильного меню">
+                <use class="icon-menu"  href="./images/sprite.svg#icon-open-menu"></use>
+                <use class="icon-cross" href="./images/sprite.svg#icon-close_menu"></use>
             </svg>
     </button>
-    <div class="mobile-menu is-hidden">
-        <div class="container menu-container">
-            <button type="button" class="menu_close-btn">
-                <svg class="menu_close-icon" width="40" height="40">
-            <use class="menu-close" href="./images/sprite.svg#icon-close_menu"></use>
-          </svg> 
-        </button>
-        <div>
             <nav class="navigate">
                <ul class="navigate__list">
                     <li class="navigate__item"><a href="index.html"        class="navigate__link navigate__link--current" >Студия</a></li>

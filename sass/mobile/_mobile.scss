@@ -1,6 +1,6 @@
-.menu_open-btn,
- .menu_close-btn {
-  display: -webkit-box;
+
+.menu_open {
+   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
@@ -16,11 +16,15 @@
     fill: $hover-collor-text;
   }
 
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 768px) {
     display: none;
   }
 }
-.mobile-menu {
+.menu_open .icon-cross {
+  display: none;
+}
+
+/*.mobile-menu {
   position: fixed;
   background-color: #ffffff;
   top: 0;
