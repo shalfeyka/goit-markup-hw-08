@@ -10,32 +10,68 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
-       <!--Header-->
+        <!--Header-->
    <header class="header">
     <div class="container header__container">
-    <a class="logo" href="./index.html">Web<span class="logo__dark">Studio</span></a>
-    <nav class="navigate">
-       <ul class="navigate__list">
-            <li class="navigate__item"><a href="index.html"        class="navigate__link" >Студия</a></li>
-            <li class="navigate__item"><a href="./portfolio.html"  class="navigate__link navigate__link--current">Портфолио</a></li>
-            <li class="navigate__item"><a href=""                  class="navigate__link">Контакты </a></li>
-       </ul>
-    </nav>
-    <!--Contacts-->
-    <ul class="contacts-list">
-        <li class="contacts-list__item"><a class="contacts-list__link" href="mailto:info@devstudio.com">
-            <svg class="contacts-list__icon" width="16" height="12"> 
-            <use href="./images/sprite.svg#icon-mail"></use>
-            </svg>info@devstudio.com</a></li> 
-        <li class="contacts-list__item"><a class="contacts-list__link" href="tel:+380961111111">
-            <svg class="contacts-list__icon" width="10" height="16">
-        <use
-         href="./images/sprite.svg#icon-phone">
-        </use>
-        </svg>
-       +38 096 111 11 11</a></li>
-    </ul>   
-    </div>
+                <a class="logo" href="./index.html">Web<span class="logo__dark">Studio</span></a>
+                <button
+          class="menu-button js-open-menu"
+          type="button"
+          aria-expanded="false"
+        >
+                <svg class="menu-icon" width="40" height="40">
+                    <use href="./images/icons.svg#icon-menu_24px"></use>
+                </svg>
+            </button>
+            <div class="mobile-menu js-menu-container">
+                <button
+                  class="mobile-menu__close js-close-menu"
+                  type="button"
+                  aria-expanded="false"
+                  >
+                        <svg class="menu_close-icon" width="40" height="40" aria-label="Меню">
+                            <use href="./images/icons.svg#icon-close_24px"></use>
+                        </svg>
+                    </button>
+                    <nav class="navigate"></nav>
+               <ul class="navigate__list">
+                    <li class="navigate__item"><a href="index.html"        class="navigate__link" >Студия</a></li>
+                    <li class="navigate__item"><a href="./portfolio.html"  class="navigate__link navigate__link--current">Портфолио</a></li>
+                    <li class="navigate__item"><a href=""                  class="navigate__link">Контакты </a></li>
+               </ul>
+            </nav>
+            <ul class="contacts-list">
+                <li class="contacts-list__item"><a class="contacts-list__link" href="mailto:info@devstudio.com">
+                    <svg class="contacts-list__icon" width="16" height="12"> 
+                    <use href="./images/sprite.svg#icon-mail"></use>
+                    </svg>info@devstudio.com</a></li>
+                <li class="contacts-list__item"><a class="contacts-list__link" href="tel:+380961111111">
+                    <svg class="contacts-list__icon" width="10" height="16">
+                <use
+                 href="./images/sprite.svg#icon-phone">
+                </use>
+                </svg>
+               +38 096 111 11 11</a></li>
+            </ul>  
+            <ul class="menu">
+                <li class="menu__item">
+                  <a href="" class="menu__link">Instagram</a>
+                </li>
+                <li class="menu__item"><span class="menu__line"></span></li>
+                <li class="menu__item">
+                  <a href="" class="menu__link">Twitter</a>
+                </li>
+                <li class="menu__item"><span class="menu__line"></span></li>
+                <li class="menu__item">
+                  <a href="" class="menu__link">Facebook</a>
+                </li>
+                <li class="menu__item"><span class="menu__line"></span></li>
+                <li class="menu__item">
+                  <a href="" class="menu__link">LinkedIn</a>
+                </li>
+              </ul>
+            </div> 
+         </div>
    </header> 
 <!--Main information-->
 <main>
