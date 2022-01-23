@@ -1676,4 +1676,15 @@ img {
 .mobile-menu__close:hover, .mobile-menu__close:focus {
   fill: #2196f3;
 }
+
+@media screen and (max-width: 767px) {
+  .navigate__item {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+    margin-bottom: 36px;
+  }
+}
 /*# sourceMappingURL=main.css.map */

@@ -8,6 +8,7 @@ menu {
   }
 }
 .menu__item {
+ 
   &:not(:last-child) {
     margin-right: auto;
   }
@@ -69,5 +70,15 @@ menu {
   &:hover,
   &:focus {
     fill: $hover-collor-text;
+  }
+}
+.navigate__item {
+  @media screen and (max-width: 767px) {
+    font-family: Roboto;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+  margin-bottom: 36px;
   }
 }
