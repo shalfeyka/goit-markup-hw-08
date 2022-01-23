@@ -10,19 +10,26 @@
     display: none;
   }
 }
-.menu_open .icon-cross {
+.menu_button .icon-cross {
   display: none;
 }
-.menu_open.is-open .icon-cross {
+.menu_button.is-open .icon-cross {
   display: block;
 }
 
-.menu_open.is-open .icon-menu {
+.menu_button.is-open .icon-menu {
   display: none;
 }
 .menu-container {
+  display: none;
   background-color: palegoldenrod;
   padding: 20px;
   text-align: center;
   font-size: 20px;
+  position: absolute;
+  
+
+  &.is-open {
+    display: block;
+  }
 }

@@ -13,13 +13,15 @@
     <!--Header-->
    <header class="header">
     <div class="container header__container">
+    <nav> 
     <a class="logo" href="./index.html">Web<span class="logo__dark">Studio</span></a>
     
-<nav> 
+
     <button 
     type="button"
      class="menu_button"
      aria-expanded="false"
+     aria-controls="menu-container"
      data-menu-button>
         <svg
          width="24" 
@@ -31,20 +33,10 @@
 
             </svg>
     </button>
-    <div class="menu-container">
-
+    <div class="menu-container" id="menu-container" data-menu>
+        Контент меню
     </div>
 </nav>
-
-
-
-
-
-
-
-
-
-
 
             <nav class="navigate">
                <ul class="navigate__list">
