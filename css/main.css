@@ -1576,7 +1576,7 @@ img {
 }
 
 @media screen and (max-width: 767px) {
-  menu {
+  .menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1585,7 +1585,7 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  menu {
+  .menu {
     display: none;
   }
 }
@@ -1598,6 +1598,27 @@ img {
 
 .menu__item:not(:last-child) {
   margin-right: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .number {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: #2196f3;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mail {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+    color: #757575;
+  }
 }
 
 .menu__link {
@@ -1675,8 +1696,6 @@ img {
   position: absolute;
   top: 21px;
   right: 23px;
-  border: transparent;
-  background: transparent;
 }
 
 @media screen and (min-width: 768px) {
