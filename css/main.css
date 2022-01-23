@@ -1581,6 +1581,7 @@ img {
   max-width: 100%;
 }
 
+<<<<<<< Updated upstream
 @media screen and (max-width: 767px) {
   .menu {
     display: -webkit-box;
@@ -1598,10 +1599,32 @@ img {
 
 @media screen and (min-width: 768px) {
   .menu__item {
+=======
+.menu_open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: auto;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.menu_open:focus, .menu_open:hover {
+  fill: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+  .menu_open {
+>>>>>>> Stashed changes
     display: none;
   }
 }
 
+<<<<<<< Updated upstream
 .menu__item:not(:last-child) {
   margin-right: auto;
 }
@@ -1664,11 +1687,29 @@ img {
 }
 
 @media screen and (max-width: 767px) {
+=======
+.menu_open .icon-cross {
+  display: none;
+}
+
+.mobile-menu {
+  position: fixed;
+  background-color: #ffffff;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 5;
+}
+
+@media screen and (min-width: 767px) {
+>>>>>>> Stashed changes
   .mobile-menu {
     display: none;
   }
 }
 
+<<<<<<< Updated upstream
 @media screen and (min-width: 768px) and (max-width: 11199px) {
   .mobile-menu {
     margin-left: 83px;
@@ -1687,11 +1728,17 @@ img {
   bottom: 0;
   top: 0;
   left: 0;
+=======
+.menu-container {
+  padding: 48px 40px;
+  height: 100vh;
+>>>>>>> Stashed changes
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+<<<<<<< Updated upstream
       -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-pack: justify;
@@ -1767,5 +1814,61 @@ img {
 
 .menu-button.menu-icon {
   fill: currentColor;
+=======
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.menu_close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-top: 64px;
+}
+
+.menu__item {
+  padding-left: 10px;
+}
+
+@media screen and (max-width: 449px) {
+  .menu__item {
+    padding-left: 5px;
+  }
+}
+
+.menu__item:not(:first-child) {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-top: 0;
+  border-bottom: 0;
+  border-right: 0;
+}
+
+.menu__link {
+  padding-right: 10px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+
+@media screen and (max-width: 449px) {
+  .menu__link {
+    font-size: 12px;
+    padding-right: 5px;
+  }
+>>>>>>> Stashed changes
 }
 /*# sourceMappingURL=main.css.map */
