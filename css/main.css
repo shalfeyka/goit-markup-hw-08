@@ -1590,6 +1590,12 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .menu__item {
+    display: none;
+  }
+}
+
 .menu__item:not(:last-child) {
   margin-right: auto;
 }
@@ -1606,6 +1612,12 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
+}
+
+@media screen and (min-width: 768px) {
+  .menu__line {
+    display: none;
+  }
 }
 
 .mobile-menu {

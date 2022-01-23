@@ -8,11 +8,14 @@ menu {
   }
 }
 .menu__item {
- 
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
   &:not(:last-child) {
     margin-right: auto;
   }
 }
+
 .menu__link {
   font-weight: 500;
   font-size: 18px;
@@ -23,6 +26,9 @@ menu {
 .menu__line {
   border: 1px solid rgba(33, 33, 33, 0.2);
   transform: rotate(90deg);
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 .mobile-menu {
   display: flex;
