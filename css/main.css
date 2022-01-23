@@ -42,12 +42,13 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .navigate__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
+.navigate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (max-width: 767px) {
@@ -59,6 +60,12 @@
 @media screen and (min-width: 768px) {
   .navitage__item {
     margin-right: 50px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -93,6 +100,36 @@
   }
 }
 
+.contacts-list__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.contacts-list__icon:hover {
+  color: #2196f3;
+}
+
+@media screen and (max-width: 767px) {
+  .contacts-list__icon {
+    display: none;
+  }
+}
+
+.contacts-list {
+  list-style-type: none;
+  margin-left: auto;
+  border-radius: 4px;
+  fill: currentColor;
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts-list {
     display: block;
@@ -111,39 +148,6 @@
     -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
   }
-}
-
-@media screen and (max-width: 767px) and (min-width: 1200px) {
-  .contacts-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
-.contacts-list__icon {
-  margin-right: 10px;
-  fill: currentColor;
-}
-
-.contacts-list__icon:hover {
-  color: #2196f3;
-}
-
-@media screen and (max-width: 767px) {
-  .contacts-list__icon {
-    display: none;
-  }
-}
-
-.contacts-list {
-  list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
-  border-radius: 4px;
-  fill: currentColor;
 }
 
 .contacts-list__link {
@@ -1611,6 +1615,12 @@ img {
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .number {
+    display: block;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .mail {
     font-weight: 500;
@@ -1716,6 +1726,18 @@ img {
     line-height: 47px;
     letter-spacing: 0.02em;
     margin-bottom: 36px;
+  }
+}
+
+@media screen and (max-width: 7687px) {
+  .menu-button {
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */

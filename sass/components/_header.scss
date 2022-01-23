@@ -29,16 +29,21 @@
     @media screen and (max-width: 767px) {
       display: block;
     }
-    @media screen and (min-width: 1200px) {
-        display: flex;;
-      }
 }
+    
+.navigate {
+    display: flex;
+    align-items: center;
+}
+
 .navitage__item {
     @media screen and (max-width: 767px) {
     margin-bottom: 30px;
   }
   @media screen and (min-width: 768px) {
     margin-right: 50px;
+    justify-content: center;
+    align-items: center;
   }
 }
  .navigate__link {
@@ -73,29 +78,7 @@
     bottom: -1px;
    } 
 }
- .contacts-list {
-    
-     @media screen and (min-width: 768px) and (max-width: 1199px) {
-         display: block;
-     }
-     @media screen and (max-width: 767px) {
-        margin-top: auto;
-        margin-left: 0;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-        flex-direction: column-reverse;
-        
-        @media screen and (min-width: 1200px) {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-        }
-     }
- }
+
 .contacts-list__icon {
     margin-right: 10px;
     fill: currentColor;
@@ -106,14 +89,36 @@
     @media screen and (max-width: 767px) {
         display: none;
     }
+  
 }
 
 .contacts-list {
     list-style-type: none;
-    display: flex;
     margin-left: auto;
     border-radius: 4px;
     fill: currentColor;
+    
+    @media screen and (min-width: 1200px) {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        display: block;
+    }
+    @media screen and (max-width: 767px) {
+       margin-top: auto;
+       margin-left: 0;
+       display: -webkit-box;
+       display: -ms-flexbox;
+       display: flex;
+       -webkit-box-orient: vertical;
+       -webkit-box-direction: reverse;
+       -ms-flex-direction: column-reverse;
+       flex-direction: column-reverse;
+       
+    }
 }
 .contacts-list__link {
     display: flex;
