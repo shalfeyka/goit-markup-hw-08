@@ -7,7 +7,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
-    url('../images/mobile/overlaymobile1x.jpg');
+    url('../images/overlaymobile1x.jpg');
 
     @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
@@ -17,7 +17,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url('../images/mobile/overlaymobile2x.jpg');
+      url('../images/overlaymobile2x.jpg');
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -26,7 +26,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url('../images/tablet/overlaytablet1x.jpg');
+      url('../images/overlaytablet1x.jpg');
   }
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
@@ -36,7 +36,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url('../images/tablet/overlaytablet2x.jpg')
+      url('../images/overlaytablet2x.jpg')
   }
   @media screen and (min-width: 1200px) {
     height: 600px;
@@ -48,7 +48,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url('../images/pc/overlaypc1x.jpg');
+      url('../images/overlaypc1x.jpg');
   }
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
@@ -58,7 +58,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url('../images/pc/overlaypc2x.jpg');
+      url('../images/overlaypc2x.jpg');
   }
 
 }
@@ -220,6 +220,9 @@
       }
       @media screen and (min-width: 1200px) {
         margin-bottom: 50px;
+      }
+      @media screen and (max-width: 767px) {
+        display: none;
       }
 }
 .work-list {

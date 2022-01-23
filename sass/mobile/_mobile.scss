@@ -111,10 +111,34 @@
   }
 }
 .menu-button {
-  @media screen and (max-width: 7687px) {
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 0;
+  border: 0;
+  background-color: transparent;
+  display: block;
+  
+
+  @media screen and (max-width: 767px) {
     margin-left: auto;
   }
   @media screen and (min-width: 768px) {
   display: none;
   }
-    }
+  &:hover,
+  &:focus {
+    fill: $hover-collor-text;
+  }
+ }
+.menu-button.menu-icon {
+    fill: currentColor;
+}
